@@ -1,0 +1,10 @@
+{
+    "name": "ekstep-content-plugin-dev-common",
+    "dependencies": {
+        "jasmine-jquery": "^2.1.1",
+        "angular-mocks": "1.5.9",
+        "content-editor-dependency": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/external.min.js",
+        "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.js",
+        "renderer": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/preview/js/renderer.min.js"
+    }
+}
