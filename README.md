@@ -41,3 +41,13 @@ require('ekstep-content-plugin-dev-common/lib/gulp-tasks')({
 ```
 
 The `karmaServerOptions` supports options listed in [karma configuration documentation](http://karma-runner.github.io/1.0/config/configuration-file.html)
+
+
+### Development
+
+* Run Following command to verify changes
+
+```
+npm install
+gulp
+```

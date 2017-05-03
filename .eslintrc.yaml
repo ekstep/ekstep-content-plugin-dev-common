@@ -1,0 +1,14 @@
+extends: "eslint:recommended"
+parserOptions:
+  ecmaVersion: 5
+rules:
+  valid-jsdoc:
+    - 2
+    - requireReturn: false
+  no-trailing-spaces: 2
+  indent: ["error", 4]
+env:
+  browser: true
+  jasmine: true
+  node: true
+  jquery: true
