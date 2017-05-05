@@ -4,22 +4,14 @@ Common development files for writing ekstep content plugin. Provides gulp tasks 
 
 #### Usage
 
-* Add this package as dev dependency in `package.json`
+* Add this package as npm and bower dependency
 
-```json
-"devDependencies": {
-    "ekstep-content-plugin-dev-common": "ekstep/ekstep-content-plugin-dev-common"
-}
+```sh
+npm install ekstep/ekstep-content-plugin-dev-common --save-dev
+
+//This will ensure the dependency files from content-editor and renderer are installed into `bower_components` folder on `bower install`. These files are included in karma configuration for running tests for the plugin
+bower install ekstep/ekstep-content-plugin-dev-common
 ```
-
-* Add this package as dependency in `bower.json`. This will ensure the dependency files from content-editor and renderer are installed into `bower_components` folder on `bower install`. These files are included in karma configuration for running tests for the plugin
-
-```json
-    "dependencies": {
-        "ekstep-content-plugin-dev-common": "ekstep/ekstep-content-plugin-dev-common"
-    }
-```
-
 
 * Including the default gulp tasks with default options
 
