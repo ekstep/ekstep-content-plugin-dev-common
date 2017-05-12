@@ -26,13 +26,16 @@ require('ekstep-content-plugin-dev-common/lib/gulp-tasks')();
 ```js
 //gulpfile.js
 require('ekstep-content-plugin-dev-common/lib/gulp-tasks')({
-    karmaServerOptions: {
+    editorKarmaServerOptions: {
+        exclude: ["path/to/*.js"]
+    },
+    rendererKarmaServerOptions: {
         exclude: ["path/to/*.js"]
     }
 });
 ```
 
-The `karmaServerOptions` supports options listed in [karma configuration documentation](http://karma-runner.github.io/1.0/config/configuration-file.html)
+The `editorKarmaServerOptions` and `rendererKarmaServerOptions` supports options listed in [karma configuration documentation](http://karma-runner.github.io/1.0/config/configuration-file.html)
 
 
 ### Development

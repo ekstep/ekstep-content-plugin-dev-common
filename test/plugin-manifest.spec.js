@@ -2,6 +2,110 @@ var PluginManifest = require("../lib/plugin-manifest");
 var fs = require('fs');
 
 describe("PluginManifest", function() {
+    describe("#getEditorSrcFiles", function() {
+        it("should return js dependency files followed by main js file listed in editor section of the manifest", function() {
+            var pluginManifest = new PluginManifest({
+                "editor": {
+                    "main": "editor/plugin.js",
+                    "dependencies": [
+                        { "type": "js", "src": "editor/init.js" },
+                        { "type": "js", "src": "editor/my-editor-app.js" }
+                    ]
+                },
+                "renderer": {
+                    "main": "renderer/plugin.js"
+                }
+            });
+
+            var srcFiles = pluginManifest.getEditorSrcFiles();
+
+            expect(srcFiles).toEqual([
+                "editor/init.js",
+                "editor/my-editor-app.js",
+                "editor/plugin.js"
+            ]);
+        });
+
+        it("should return zero files when there is no editor section in manifest", function() {
+            var pluginManifest = new PluginManifest({});
+
+            var srcFiles = pluginManifest.getEditorSrcFiles();
+
+            expect(srcFiles).toEqual([]);
+        });
+
+        it("should not return dependencies of type plugin in manifest", function() {
+            var pluginManifest = new PluginManifest({
+                "editor": {
+                    "main": "editor/plugin.js",
+                    "dependencies": [
+                        { "type": "js", "src": "editor/init.js" },
+                        { "type": "plugin", "src": "another-plugin" }
+                    ]
+                }
+            });
+
+            var srcFiles = pluginManifest.getEditorSrcFiles();
+
+            expect(srcFiles).toEqual([
+                "editor/init.js",
+                "editor/plugin.js"
+            ]);
+        });
+    });
+
+    describe("#getRendererSrcFiles", function() {
+        it("should return js dependency files followed by main js file listed in renderer section of the manifest", function() {
+            var pluginManifest = new PluginManifest({
+                "editor": {
+                    "main": "editor/plugin.js"
+                },
+                "renderer": {
+                    "main": "renderer/plugin.js",
+                    "dependencies": [
+                        { "type": "js", "src": "renderer/init.js" },
+                        { "type": "js", "src": "renderer/my-renderer-app.js" }
+                    ]
+                }
+            });
+
+            var srcFiles = pluginManifest.getRendererSrcFiles();
+
+            expect(srcFiles).toEqual([
+                "renderer/init.js",
+                "renderer/my-renderer-app.js",
+                "renderer/plugin.js"
+            ]);
+        });
+
+        it("should return zero files when there is no renderer section in manifest", function() {
+            var pluginManifest = new PluginManifest({});
+
+            var srcFiles = pluginManifest.getRendererSrcFiles();
+
+            expect(srcFiles).toEqual([]);
+        });
+
+        it("should not return dependencies of type plugin in manifest", function() {
+            var pluginManifest = new PluginManifest({
+                "renderer": {
+                    "main": "renderer/plugin.js",
+                    "dependencies": [
+                        { "type": "js", "src": "renderer/init.js" },
+                        { "type": "plugin", "src": "another-plugin" }
+                    ]
+                }
+            });
+
+            var srcFiles = pluginManifest.getRendererSrcFiles();
+
+            expect(srcFiles).toEqual([
+                "renderer/init.js",
+                "renderer/plugin.js"
+            ]);
+        });
+    });
+
     describe("#getAllSrcFiles", function() {
         it("should return js dependency files followed by main js file listed in editor and renderer section of the manifest", function() {
             var pluginManifest = new PluginManifest({
