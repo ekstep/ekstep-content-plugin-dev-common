@@ -40,9 +40,17 @@ The `editorKarmaServerOptions` and `rendererKarmaServerOptions` supports options
 
 ### Development
 
+>NOTE: This code base uses [jasmine-node](https://github.com/mhevery/jasmine-node) which is based on [jamsine 1.3.1](https://jasmine.github.io/1.3/introduction)
+
 * Run Following command to verify changes
 
 ```
 npm install
 gulp
+```
+
+* Running test in watch mode
+
+```
+gulp test:watch
 ```
