@@ -4,7 +4,7 @@ var eslintIfFixed = require('gulp-eslint-if-fixed');
 var clean = require('gulp-clean');
 var jasmineNode = require('gulp-jasmine-node');
 var jasmine = require('jasmine-node');
-var exec = require('child_process').exec;
+var spawnSync = require('child_process').spawnSync;
 
 
 gulp.task('clean', function() {
@@ -35,11 +35,7 @@ gulp.task('test', ['clean'], function() {
 
 gulp.task('test:watch', ['clean', 'test'], function() {
     return gulp.watch(['lib/**/*.js', 'test/**/*.js'], function() {
-        return exec('node_modules/gulp/bin/gulp.js test', function(err, stdout, stderr) {
-            /*eslint-disable no-console */
-            console.log(stdout);
-            console.log(stderr);
-        });
+        spawnSync('node_modules/gulp/bin/gulp.js', ['test'], { stdio: 'inherit' });
     });
 });
 

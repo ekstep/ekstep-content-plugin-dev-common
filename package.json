@@ -24,7 +24,12 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-junit-reporter": "^1.2.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "rimraf": "^2.6.1",
+    "eslint-config-ekstep-content-plugin": "ekstep/eslint-config-ekstep-content-plugin"
+  },
+  "scripts": {
+    "build": "npm install && gulp"
   },
   "author": "ekstep",
   "license": "MIT",
