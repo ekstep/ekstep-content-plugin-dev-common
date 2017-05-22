@@ -6,6 +6,7 @@
         "content-editor-dependency": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/external.min.js",
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.js",
         "renderer-dependency-appconfig": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/preview/js/AppConfig.js",
+        "renderer-dependency-toastr": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/preview/js/thirdparty/toastr.min.js",
         "renderer-dependency-script": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/preview/js/script.min.js",
         "renderer": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/preview/js/renderer.min.js"
     }
