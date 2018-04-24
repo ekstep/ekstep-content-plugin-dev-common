@@ -11,7 +11,7 @@
         "renderer-createjs": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/createjs.min.js",
         "renderer-creatine": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/creatine-1.0.0.min.js",
         "renderer": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/renderer.min.js",
-		"renderer-script": "https://dev.ekstep.in/content/preview/scripts/renderer.script.min.js?ver=379",
-		"renderer-telemetry": "https://dev.ekstep.in/content/preview/scripts/renderer.telemetry.min.js?ver=379"
+        "pollyfill": "https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js",
+		"renderer-telemetry": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.telemetry.min.js"
     }
 }
