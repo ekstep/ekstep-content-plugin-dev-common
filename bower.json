@@ -6,7 +6,7 @@
         "angular-mocks": "1.5.9",
         "content-editor-dependency": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/external.min.js",
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.js",
-        "renderer-dependency-appconfig": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.script.min.js",
+        "renderer-dependency-appconfig": "https: //dev.ekstep.in/content/preview/scripts/renderer.script.min.js?ver=379",
         "renderer-dependency-toastr": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.external.min.js",
         "renderer-createjs": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/createjs.min.js",
         "renderer-creatine": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/creatine-1.0.0.min.js",
@@ -15,3 +15,6 @@
 		"renderer-telemetry": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.telemetry.min.js"
     }
 }
+
+// TODO: Once prod push or may 2018 release is done, change "renderer-dependency-appconfig" with this file url.
+// "renderer-dependency-appconfig": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.script.min.js",
