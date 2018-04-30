@@ -15,6 +15,3 @@
 		"renderer-telemetry": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.telemetry.min.js"
     }
 }
-
-// TODO: Once prod push or may 2018 release is done, change "renderer-dependency-appconfig" with this file url.
-// "renderer-dependency-appconfig": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.script.min.js",
