@@ -26,7 +26,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "lodash": "^4.17.4",
     "rimraf": "^2.6.1",
-    "eslint-config-ekstep-content-plugin": "ekstep/eslint-config-ekstep-content-plugin"
+    "eslint-config-ekstep-content-plugin": "https://github.com/ekstep/eslint-config-ekstep-content-plugin.git"
   },
   "scripts": {
     "build": "npm install && gulp"
