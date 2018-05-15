@@ -6,7 +6,7 @@
         "angular-mocks": "1.5.9",
         "content-editor-dependency": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/external.min.js",
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.js",
-        "renderer-dependency-appconfig": "https://dev.ekstep.in/content/preview/scripts/renderer.script.min.js",
+        "renderer-dependency-appconfig": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.script.min.js",
         "renderer-dependency-toastr": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.external.min.js",
         "renderer-createjs": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/createjs.min.js",
         "renderer-creatine": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/creatine-1.0.0.min.js",
@@ -14,7 +14,6 @@
         "pollyfill": "https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js",
         "renderer-telemetry": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/scripts/renderer.telemetry.min.js",
         "renderer-cordovaplugin" : "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/cordovaaudioplugin-0.6.1.min.js",
-        "renderer-angular-mocks": "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-mocks.js"
-
+        "renderer-angular-mocks": "https://cdn.jsdelivr.net/npm/angular-mocks@1.5.9/angular-mocks.min.js"
     }
 }
