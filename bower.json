@@ -3,6 +3,7 @@
     "dependencies":
     {
         "jasmine-jquery": "^2.1.1",
+        "angular": "1.5.9",
         "angular-mocks": "1.5.9",
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.1.35.859.js",
         "content-player": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/script.min.1.9.686.js",
