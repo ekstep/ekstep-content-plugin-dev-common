@@ -7,6 +7,7 @@
         "angular-mocks": "1.5.9",
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/scripts/script.min.1.35.859.js",
         "content-player": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/script.min.1.9.686.js",
+        "toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
         "renderer-createjs": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/createjs.min.js",
         "renderer-creatine": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/creatine-1.0.0.min.js",
         "renderer": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/renderer.min.js",
