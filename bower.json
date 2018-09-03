@@ -8,9 +8,9 @@
         "content-editor": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/content-editor/*.js",
         "content-player": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/*.js",
         "toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
+        "coreplugins": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/*.js",
         "pollyfill": "https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js",
-        "renderer-angular-mocks": "https://cdn.jsdelivr.net/npm/angular-mocks@1.5.9/angular-mocks.min.js",
-        "coreplugins": "https://s3.ap-south-1.amazonaws.com/ekstep-public-prod/v3/preview/coreplugins/*"
+        "renderer-angular-mocks": "https://cdn.jsdelivr.net/npm/angular-mocks@1.5.9/angular-mocks.min.js"
     },
     "install": {
         "path": "",
@@ -19,8 +19,10 @@
             "content-player": "bower_components/content-player/*.*",
             "coreplugins": {
                 "mapping": [
-                  {"bower_components/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/createjs.min.js": "renderer-createjs"},
-                  {"bower_components/coreplugins/org.ekstep.ecmlrenderer-1.0/renderer/libs/creatine-1.0.0.min.js": "renderer-creatine"}
+                  {"bower_components/renderer-createjs/createjs.min.js": "renderer-createjs"},
+                  {"bower_components/renderer-creatine/creatine-1.0.0.min.js": "renderer-creatine"},
+                  {"bower_components/renderer/renderer.min.js": "renderer"},
+                  {"bower_components/renderer-cordovaplugin/cordovaaudioplugin-0.6.1.min.js": "renderer-cordovaplugin"}
                 ]
             }
         }
