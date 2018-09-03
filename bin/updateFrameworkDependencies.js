@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var rimraf = require('rimraf');
-var execSync = require('child_process').execSync;
+var execSync = require('child_process').exec;
 
 rimraf.sync('bower_components/content-editor*');
 rimraf.sync('bower_components/renderer*');
