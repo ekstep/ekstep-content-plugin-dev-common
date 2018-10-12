@@ -34,6 +34,7 @@
   "author": "ekstep",
   "license": "MIT",
   "devDependencies": {
+    "bower-installer": "^1.3.6",
     "gulp-jasmine-node": "^1.0.7",
     "jasmine-node": "^1.14.5"
   }
